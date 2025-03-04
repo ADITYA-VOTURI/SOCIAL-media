@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="loginContainer">
+        <h2 id="message"></h2>
+        <div id="registerSection" style="display: none;">
+            <h2>REGISTER</h2>
+            <input type="text" id="regUsername" placeholder="Choose a Username">
+            <input type="pasword" id="regPassword" placeholder="Choose a Password">
+            <button onclick="register()">register</button>
+        </div>
+        <div id="loginSection"vvstyle="display: none;">
+            <h2>LOGIN</h2>
+            <input type="text" id="loginUsename" placeholder="Username">>
+            <input type="password" id="loginPassword" placeholder="'Password">
+            <button onclick="login()">login</button>
+        </div>
+        <button id="nextBtn" onclick="showSocialMedia()" style="display: none;">Next</button>
+    </div>
+
+    <div class="container hidden" id="socialMediaContainer">
+        <h2>Welcome, <span id="userDisplay"></span>!</h2>
+        <button onclick="logout()">Logout</button>
+        <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+        <button onclick="addPost()">Post</button>
+        <div id="posts"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
